@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet"  href="css/sellticket.css">
+
+    <script>
+        window.onload=function(ev){
+            var banner = document.querySelectorAll(".bann");
+            var btn = document.querySelectorAll(".ban>div");
+            var num = 0;
+
+            setInterval(function () {
+                num++;
+                if(num==2){
+                    num=0;
+                }
+                for(var i=0;i<banner.length;i++){
+                    banner[i].style.display="none";
+                    btn[i].style.background="black";
+                }
+                banner[num].style.display="block";
+                btn[num].style.background="orange";
+            },3000)
+        }
+    </script>
+
+</head>
+<!--头部  -->
+<div class = "header">
+    <div class ="one">
+        <img src="./image/1.png">
+    </div>
+     <div class="two">
+         <img src="./image/header.jpg">
+     </div>
+
+</div>
+<!--导航栏-->
+<div class="box">
+    <div class="con">
+        <div class="left">
+            <a class="active"  href="" >首页</a>
+            <a href="">国内机票</a>
+            <a href="">国际机票</a>
+            <a href="">民航咨询</a>
+            <a href="">民航问答</a>
+        </div>
+        <div class="right">
+            <a href="" class="login">登录</a>
+            <a href="">注册</a>
+            <a href="">用户中心</a>
+            <div class="sanjiao"></div>
+        </div>
+    </div>
+</div>
+
+<!--热门城市-->
+<div class="city">
+    <span>热门城市:</span>
+    <a href="">深圳</a>
+    <a href="">北京</a>
+    <a href="">上海</a>
+    <a href="">广州</a>
+    <a href="">南京</a>
+    <a href="">天津</a>
+    <a href="">武汉</a>
+    <a href="">长沙</a>
+    <a href="">昆明</a>
+    <a href="">贵阳</a>
+    <a href="">成都</a>
+    <a href="">重庆</a>
+    <a href="">海口</a>
+    <a href="">哈尔滨</a>
+    <a href="">更多</a>
+</div>
+
+<!--轮播图-->
+<div class="banner">
+    <div class="bann banner1">
+    </div>
+    <div class="bann banner2">
+    </div>
+    <div class="ban">
+        <div class="ban1"></div>
+        <div class="ban2"></div>
+    </div>
+</div>
+<!--热门航线预定-->
+<div class="big">
+    <h1>热门航线预定</h1>
+    <div class="citys">
+        <span>全国</span>
+        <span>深圳</span>
+        <span>北京</span>
+        <span>上海</span>
+        <span>广州</span>
+        <span>武汉</span>
+        <span>成都</span>
+        <span>海口</span>
+        <span>重庆</span>
+        <span>沈阳</span>
+    </div>
+    <div class="fenge"></div>
+    <div class="detail">
+
+        <div>
+                <p class="a">上海--->温州</p>
+                <p class="b">05月31日</p>
+                <p class="c">票价：<span class="d">￥</span><span class="e">307</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->郑州</p>
+            <p class="b">05月16日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">280</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->重庆</p>
+            <p class="b">05月20日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">370</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->海口</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">379</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->昆明</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">460</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->宁波</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">150</span></p>
+        </div>
+        <div>
+            <p class="a">上海--->厦门</p>
+            <p class="b">07月16日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">325</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->南京</p>
+            <p class="b">07月12日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">250</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->济南</p>
+            <p class="b">05月17日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">310</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->天津</p>
+            <p class="b">09月07日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">420</span></p>
+        </div>
+    </div>
+</div>
+
+<!--<div class="detail">
+    <div>
+        <p class="a">深圳-&ndash;&gt;昆明</p>
+        <p class="b">10月09日</p>
+        <p class="c">票价：<span class="d">￥</span><span class="e">399</span></p>
+    </div>
+    <div>
+        <p class="a">深圳-&ndash;&gt;武汉</p>
+        <p class="b">10月15日</p>
+        <p class="c">票价：<span class="d">￥</span><span class="e">450</span></p>
+    </div>
+    <div>
+        <p class="a">深圳-&ndash;&gt;兰州</p>
+        <p class="b">10月22日</p>
+        <p class="c">票价：<span class="d">￥</span><span class="e">500</span></p>
+    </div>
+    <div>
+        <p class="a">深圳-&ndash;&gt;海口</p>
+        <p class="b">09月11日</p>
+        <p class="c">票价：<span class="d">￥</span><span class="e">240</span></p>
+    </div>
+    <div>
+        <p class="a">深圳-&ndash;&gt;沈阳</p>
+        <p class="b">06月12日</p>
+        <p class="c">票价：<span class="d">￥</span><span class="e">749</span></p>
+    </div>
+    <div>
+        <p class="a">深圳-&ndash;&gt;上海浦东</p>
+        <p class="b">06月7日</p>
+        <p class="c">票价：<span class="d">￥</span><span class="e">518</span></p>
+    </div>
+    <div>
+        <p class="a">深圳-&ndash;&gt;北京</p>
+        <p class="b">05月27日</p>
+        <p class="c">票价：<span class="d">￥</span><span class="e">748</span></p>
+    </div>
+    <div>
+        <p class="a">深圳-&ndash;&gt;重庆</p>
+        <p class="b">10月11日</p>
+        <p class="c">票价：<span class="d">￥</span><span class="e">410</span></p>
+    </div>
+    <div>
+        <p class="a">深圳-&ndash;&gt;成都</p>
+        <p class="b">10月11日</p>
+        <p class="c">票价：<span class="d">￥</span><span class="e">470</span></p>
+    </div>
+    <div>
+        <p class="a">深圳-&ndash;&gt;郑州</p>
+        <p class="b">09月03日</p>
+        <p class="c">票价：<span class="d">￥</span><span class="e">520</span></p>
+    </div>
+</div>
+</div>-->
+
+</body>
+</html>
